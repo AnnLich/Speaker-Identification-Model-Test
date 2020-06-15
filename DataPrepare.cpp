@@ -77,8 +77,6 @@ void prepare_data(std::vector<std::string>& v, int type)
         switch (type)
         {
         case MFCC: {
-
-
             bob::ap::Ceps mfcc(16000, 30.0, 10.0, 26, 13, 0.0, 8000.0, 2, 0.97);
             mfcc.setWithDelta(true);
             mfcc.setWithDeltaDelta(true);
@@ -156,7 +154,6 @@ void prepare_data(std::vector<std::string>& v, int type)
             }
             break;
         }
-
         }
     }
     os.close();
